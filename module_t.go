@@ -9,8 +9,8 @@ import (
 
 const (
 	theModuleName     = "github.com/starter-go/libgorm"
-	theModuleVersion  = "v0.9.12"
-	theModuleRevision = 13
+	theModuleVersion  = "v0.9.13"
+	theModuleRevision = 14
 	theModuleResPath  = "src/lib/resources"
 )
 
