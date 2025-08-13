@@ -61,6 +61,7 @@ func (inst *DefaultDatasourceRegistry) loadSource(alias string) (*libgorm.DataSo
 	cfg.Host = getter.GetString(prefix + "host")
 	cfg.Port = getter.GetInt(prefix + "port")
 	cfg.Database = getter.GetString(prefix + "database")
+	cfg.Name = alias
 	cfg.Enabled = enabled
 
 	err := getter.Error()
