@@ -3,29 +3,41 @@
         "version": "4",
         "sources": [
             {
-                "id": "libgorm",
+                "id": "lib",
                 "path": "internal",
                 "r": true
             },
             {
-                "id": "demo1",
-                "path": "src/demo/demo1",
+                "id": "test",
+                "path": "src/test/golang/",
+                "r": true
+            },
+            {
+                "id": "demo",
+                "path": "src/demo/golang/",
                 "r": true
             }
         ],
         "destinations": [
             {
-                "id": "libgorm",
-                "path": "gen/gen4libgorm",
+                "id": "lib",
+                "path": "gen/lib4libgorm",
                 "sources": [
-                    "libgorm"
+                    "lib"
                 ]
             },
             {
-                "id": "demo1",
-                "path": "gen/gen4demo1",
+                "id": "test",
+                "path": "gen/test4libgorm",
                 "sources": [
-                    "demo1"
+                    "test"
+                ]
+            },
+            {
+                "id": "demo",
+                "path": "gen/demo4libgorm",
+                "sources": [
+                    "demo"
                 ]
             }
         ]

@@ -12,9 +12,9 @@ type TableReg struct {
 	_as func(libgorm.GroupRegistry, MyAgent) //starter:as(".","#")
 
 	DSMan      libgorm.DataSourceManager //starter:inject("#")
-	Prefix     string                    //starter:inject("datagroup.demo1.table-name-prefix")
-	URI        string                    //starter:inject("datagroup.demo1.uri")
-	SourceName string                    //starter:inject("datagroup.demo1.datasource")
+	Prefix     string                    //starter:inject("datagroup.default.table-name-prefix")
+	URI        string                    //starter:inject("datagroup.default.uri")
+	SourceName string                    //starter:inject("datagroup.default.datasource")
 
 	agent libgorm.DataSourceAgent
 }
@@ -30,7 +30,7 @@ func (inst *TableReg) Groups() []*libgorm.GroupRegistration {
 	theTableNamePrefix = prefix
 
 	r1 := &libgorm.GroupRegistration{
-		URI:    "uri:datagroup:demo1",
+		URI:    "uri:datagroup:default",
 		Prefix: prefix,
 		Group:  inst,
 		Source: inst.SourceName,

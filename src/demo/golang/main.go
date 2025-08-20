@@ -9,6 +9,6 @@ import (
 
 func main() {
 	i := starter.Init(os.Args)
-	i.MainModule(libgorm.Module())
+	i.MainModule(libgorm.ModuleForDemo())
 	i.WithPanic(true).Run()
 }

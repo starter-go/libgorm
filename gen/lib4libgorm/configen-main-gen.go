@@ -1,4 +1,4 @@
-package gen4libgorm
+package lib4libgorm
 
 import "github.com/starter-go/application"
 
