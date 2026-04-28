@@ -7,7 +7,7 @@ require (
 	github.com/starter-go/base v0.9.11 // indirect; direct
 	github.com/starter-go/starter v1.0.14
 	github.com/starter-go/vlog v0.9.12 // direct
-	gorm.io/gorm v1.25.5
+	gorm.io/gorm v1.30.1
 )
 
 require (
@@ -16,4 +16,5 @@ require (
 	github.com/starter-go/afs v0.9.13 // indirect
 	github.com/starter-go/configen v0.9.5 // indirect
 	golang.org/x/sys v0.22.0 // indirect
+	golang.org/x/text v0.20.0 // indirect
 )

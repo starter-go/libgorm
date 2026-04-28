@@ -9,6 +9,12 @@ import (
 
 type migrator struct{}
 
+// MigrateColumnUnique implements gorm.Migrator.
+func (inst *migrator) MigrateColumnUnique(dst interface{}, field *schema.Field, columnType gorm.ColumnType) error {
+	inst.log("MigrateColumnUnique")
+	return nil
+}
+
 func (inst *migrator) _impl() gorm.Migrator {
 	return inst
 }

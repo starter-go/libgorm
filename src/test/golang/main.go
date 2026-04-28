@@ -8,7 +8,11 @@ import (
 )
 
 func main() {
-	i := starter.Init(os.Args)
-	i.MainModule(libgorm.ModuleForTest())
+
+	a := os.Args
+	m := libgorm.ModuleForTest()
+	i := starter.Init(a)
+
+	i.MainModule(m)
 	i.WithPanic(true).Run()
 }
