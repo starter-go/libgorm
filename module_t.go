@@ -8,8 +8,8 @@ import (
 
 const (
 	theModuleName     = "github.com/starter-go/libgorm"
-	theModuleVersion  = "v0.9.15"
-	theModuleRevision = 16
+	theModuleVersion  = "v0.9.16"
+	theModuleRevision = 17
 )
 
 ////////////////////////////////////////////////////////////////////////////////
