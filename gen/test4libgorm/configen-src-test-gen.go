@@ -1,5 +1,6 @@
 package test4libgorm
 import (
+    p512a30914 "github.com/starter-go/libgorm"
     pac62b8721 "github.com/starter-go/libgorm/src/test/golang/units4libgorm"
      "github.com/starter-go/application"
 )
@@ -35,9 +36,15 @@ func (inst* pac62b8721b_units4libgorm_Unit1) inject(injext application.Injection
 	nop(ie, com)
 
 	
+    com.DSM = inst.getDSM(ie)
 
 
     return nil
+}
+
+
+func (inst*pac62b8721b_units4libgorm_Unit1) getDSM(ie application.InjectionExt)p512a30914.DataSourceManager{
+    return ie.GetComponent("#alias-512a309140d0ad99eb1c95c8dc0d02f9-DataSourceManager").(p512a30914.DataSourceManager)
 }
 
 

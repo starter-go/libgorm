@@ -7,6 +7,7 @@ import (
 	"github.com/starter-go/libgorm/gen/lib4libgorm"
 	"github.com/starter-go/libgorm/gen/test4libgorm"
 	"github.com/starter-go/starter"
+	"github.com/starter-go/units/modules/units"
 )
 
 // Module 导出模块 ['github.com/starter-go/libgorm']
@@ -25,6 +26,7 @@ func ModuleForTest() application.Module {
 	mb.Components(test4libgorm.ExportConfig)
 
 	mb.Depend(Module())
+	mb.Depend(units.Module())
 
 	return mb.Create()
 }
