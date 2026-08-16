@@ -8,6 +8,7 @@ import (
 	"github.com/starter-go/libgorm/gen/test4libgorm"
 	"github.com/starter-go/starter"
 	"github.com/starter-go/units/modules/units"
+	"github.com/starter-go/v0/libdao/modules/libdao"
 )
 
 // Module 导出模块 ['github.com/starter-go/libgorm']
@@ -27,6 +28,7 @@ func ModuleForTest() application.Module {
 
 	mb.Depend(Module())
 	mb.Depend(units.Module())
+	mb.Depend(libdao.Module())
 
 	return mb.Create()
 }
@@ -37,6 +39,7 @@ func ModuleForDemo() application.Module {
 	mb.Components(demo4libgorm.ExportConfig)
 
 	mb.Depend(Module())
+	mb.Depend(libdao.Module())
 
 	return mb.Create()
 }

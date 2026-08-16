@@ -7,16 +7,17 @@ toolchain go1.24.7
 require (
 	github.com/starter-go/afs v0.10.0 // indirect
 	github.com/starter-go/application v0.10.0
-	github.com/starter-go/base v0.10.0 // indirect; direct
+	github.com/starter-go/base v0.10.3 // indirect; direct
 	github.com/starter-go/configen v0.10.0 // indirect
 	github.com/starter-go/starter v0.10.0
-	github.com/starter-go/vlog v0.10.0 // direct
 	github.com/starter-go/units v0.10.0 // direct
+	github.com/starter-go/vlog v0.10.0 // direct
 )
 
 require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
+	github.com/starter-go/v0/libdao v0.10.0
 	golang.org/x/sys v0.22.0 // indirect
 	golang.org/x/text v0.20.0 // indirect
 	gorm.io/gorm v1.30.1
